@@ -29,7 +29,7 @@ Crear un modelo de clusterización sobre la información que se dispone.
 
 ## Clusterización 🛠
 
-![cluster](https://github.com/alorenzoti/Uber_proyect/blob/main/image/cluster_heatmap_3_21_15.html)
+![cluster](https://github.com/alorenzoti/Uber_proyect/blob/main/image/cluster_heatmap_3_21_15.png)
 
 
 ## Technology 🤖

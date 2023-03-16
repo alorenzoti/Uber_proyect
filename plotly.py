@@ -95,10 +95,10 @@ def main():
     st.write('App para saber a donde ir!')
     
     # Agregar campos para que el usuario ingrese los argumentos
-    mes = st.number_input('Ingrese el mes:', value=0)
-    dia = st.number_input('Ingrese el dia', value=0)
-    hora = st.number_input('Ingrese la hora', value=0) 
-    pickups = st.number_input('Nº min de reocogidas', value=0)
+    mes = st.number_input('Ingrese el mes:', value=1,min_value=1, max_value=12)
+    dia = st.number_input('Ingrese el dia', value=1,min_value=1, max_value=31)
+    hora = st.number_input('Ingrese la hora', value=1,min_value=1, max_value=24) 
+    pickups = st.number_input('Nº min de recogidas', value=1,min_value=1)
     # Agregar un botón para llamar a la función
     if st.button('Ejecutar'):
         # Llamar a la función y mostrar el resultado
@@ -108,6 +108,10 @@ def main():
 if __name__ == '__main__':
     # Crear una barra lateral con el enlace "Acerca de"
     st.sidebar.title('Acerca de')
-    st.sidebar.info('Esta aplicación fue creada por mí.')
+    st.sidebar.info('Versión Beta de la app, esta app esta pensada para conductores de Uber que no sepan donde ir')
+    st.sidebar.info('Parametros de entrada: Mes: nº del mes, Dia: nº del dia del mes, Hora: nº hora (1-24), Nº min de recogidas: número de recogidas necesarias para formar un cluster')
     # Llamar a la función principal
     main()
+
+
+    # correr en consola en la dirección del proyecto: streamlit run plotly.py
